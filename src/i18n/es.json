@@ -25,7 +25,7 @@
     "textHtml": "Colaboradores: únete a nosotros, Colibri Starter se construye entre todos."
   },
   "nav": {
-    "why": "Por qué Colibri Starter",
+    "why": "¿Por qué Colibri Starter?",
     "sovereignty": "Soberanía",
     "developers": "Desarrolladores",
     "github": "GitHub ↗",
@@ -37,7 +37,7 @@
     "alt": "Ejemplo de tienda Sylius: página de producto"
   },
   "own": {
-    "title": "Por qué dejar una plataforma de suscripción",
+    "title": "¿Por qué dejar una plataforma de suscripción?",
     "intro": "En una plataforma de suscripción, pagas cada mes, a menudo una comisión sobre tus ventas, y tus datos se quedan en manos del proveedor. Con Colibri Starter, tu tienda y tus datos siguen siendo tuyos.",
     "rentTitle": "Plataforma de suscripción",
     "rentItems": [
@@ -79,7 +79,7 @@
   "found": {
     "leadHtml": "Colibri Starter es un conjunto de comandos de Castor (<a href=\"https://castor.jolicode.com\" target=\"_blank\" rel=\"noopener\">¿qué es Castor?</a>) para un proyecto estándar de Sylius. Creas un proyecto y después añades o quitas funcionalidades según evolucionen tus necesidades. Tu proyecto sigue siendo estándar: cualquier equipo de Symfony puede hacerse cargo de él.",
     "dev": {
-      "title": "¿Eres desarrollador?"
+      "title": "¿Eres desarrollador/a?"
     },
     "feats": [
       {

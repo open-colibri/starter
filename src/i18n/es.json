@@ -1,0 +1,138 @@
+{
+  "locale": {
+    "label": "Español",
+    "hreflang": "es",
+    "match": ["es"]
+  },
+  "meta": {
+    "title": "Colibri Starter · Tu tienda de comercio electrónico soberana, lista en pocos días",
+    "description": "Colibri Starter es una herramienta de línea de comandos que crea tu tienda de comercio electrónico completa con un solo comando. Alójala donde quieras, sin comisiones sobre tus ventas."
+  },
+  "lang": {
+    "label": "Idioma",
+    "en": "EN",
+    "fr": "FR",
+    "ro": "RO",
+    "de": "DE",
+    "es": "ES"
+  },
+  "redirect": {
+    "title": "Redirigiendo…",
+    "manual": "Elige un idioma:"
+  },
+  "announce": {
+    "tag": "Nuevo",
+    "textHtml": "Colaboradores: únete a nosotros, Colibri Starter se construye entre todos."
+  },
+  "nav": {
+    "why": "Por qué Colibri Starter",
+    "sovereignty": "Soberanía",
+    "developers": "Desarrolladores",
+    "github": "GitHub ↗",
+    "menu": "Menú"
+  },
+  "hero": {
+    "title": "Tu tienda de comercio electrónico soberana, lista en pocos días.",
+    "leadHtml": "Colibri Starter es una herramienta de línea de comandos que crea tu tienda de comercio electrónico completa, lista para que tu equipo o un socio la adapte. Alójala donde quieras, <strong>sin comisiones sobre tus ventas</strong>.",
+    "alt": "Ejemplo de tienda Sylius: página de producto"
+  },
+  "own": {
+    "title": "Por qué dejar una plataforma de suscripción",
+    "intro": "En una plataforma de suscripción, pagas cada mes, a menudo una comisión sobre tus ventas, y tus datos se quedan en manos del proveedor. Con Colibri Starter, tu tienda y tus datos siguen siendo tuyos.",
+    "rentTitle": "Plataforma de suscripción",
+    "rentItems": [
+      "La suscripción aumenta con tus ingresos",
+      "Comisiones por transacción y aplicaciones de pago cada mes",
+      "La exportación de tus datos se limita a lo que permite el proveedor",
+      "El proveedor decide la hoja de ruta"
+    ],
+    "ownTitle": "Colibri Starter",
+    "ownItems": [
+      "Sin suscripción a la plataforma ni comisiones sobre las ventas",
+      "Tu tienda y tus datos te pertenecen",
+      "Cambia de socio, alojamiento o solución cuando quieras",
+      "Adapta las funcionalidades a tu negocio"
+    ]
+  },
+  "sovereignty": {
+    "title": "Una tienda soberana",
+    "intro": "Tú decides dónde se alojan tu tienda y los datos de tus clientes.",
+    "options": [
+      {
+        "tag": "Tienes tu propia infraestructura",
+        "title": "En tus instalaciones",
+        "p": "En tus servidores o en tu nube, tu tienda se integra con el resto de tu sistema de información."
+      },
+      {
+        "tag": "Cuentas con un socio",
+        "title": "Recibe asesoramiento experto",
+        "p": "Tu socio recomienda el alojamiento adecuado para tu tráfico, tu presupuesto y tus limitaciones."
+      }
+    ],
+    "promiseTitle": "Lo que conservas",
+    "promiseItems": [
+      "Tus datos, sin depender de un proveedor",
+      "La libertad de cambiar de alojamiento",
+      "Alojamiento en Europa conforme al RGPD"
+    ]
+  },
+  "found": {
+    "leadHtml": "Colibri Starter es un conjunto de comandos de Castor (<a href=\"https://castor.jolicode.com\" target=\"_blank\" rel=\"noopener\">¿qué es Castor?</a>) para un proyecto estándar de Sylius. Creas un proyecto y después añades o quitas funcionalidades según evolucionen tus necesidades. Tu proyecto sigue siendo estándar: cualquier equipo de Symfony puede hacerse cargo de él.",
+    "dev": {
+      "title": "¿Eres desarrollador?"
+    },
+    "feats": [
+      {
+        "html": "<code>sylius:init</code> crea el proyecto: Docker, Sylius, base de datos, recursos, datos de prueba y tests."
+      },
+      {
+        "html": "<code>sylius:add</code> instala, configura y migra un plugin. <code>sylius:remove</code> lo elimina, incluida su configuración y sus migraciones."
+      },
+      {
+        "html": "<code>sylius:theme:setup</code> cambia todo el tema de la tienda y elimina primero el anterior."
+      },
+      {
+        "html": "<code>sylius:menu:remove</code> oculta las entradas del back office que no necesitas."
+      }
+    ],
+    "ctaGithub": "Ver en GitHub ↗",
+    "ctaDoc": "Documentación ↗",
+    "termPath": "~/mi-tienda",
+    "termLines": [
+      { "type": "cmd", "text": "castor sylius:add cms invoicing" },
+      { "type": "dim", "text": "instala · configura · migra · compila" },
+      { "type": "ok", "text": "2 funcionalidades activadas" },
+      { "type": "cmd", "text": "castor sylius:remove cms" },
+      { "type": "dim", "text": "y lo deshace correctamente" },
+      { "type": "ok", "text": "funcionalidad eliminada" },
+      { "type": "cmd", "text": "castor sylius:theme:setup canvas" },
+      { "type": "dim", "text": "cambia todo el tema de la tienda" },
+      { "type": "ok", "text": "tema activado" }
+    ]
+  },
+  "ecosystem": {
+    "title": "Una base de confianza",
+    "intro": "Sylius impulsa tiendas exigentes desde hace más de diez años. Experiencia en comercio electrónico y una trayectoria de proyectos que pocas soluciones pueden igualar.",
+    "link": "Descubre Sylius ↗",
+    "benefits": [
+      {
+        "title": "Impulsado por la comunidad",
+        "p": "Socios, proveedores de soluciones y profesionales independientes mantienen vivo el proyecto."
+      }
+    ]
+  },
+  "supporters": {
+    "label": "Apoyan Colibri Starter",
+    "logos": []
+  },
+  "event": {
+    "date": "Noviembre de 2026",
+    "title": "Ven a conocernos al PS Summit",
+    "p": "El primer evento de código abierto compartido por PrestaShop y Sylius: talleres, charlas técnicas y casos prácticos. Ven a hablar con nosotros de tu proyecto.",
+    "cta": "Programa del PS Summit ↗"
+  },
+  "footer": {
+    "product": "El proyecto",
+    "resources": "Recursos"
+  }
+}

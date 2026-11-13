@@ -124,12 +124,6 @@
     "label": "Sie unterstützen Colibri Starter",
     "logos": []
   },
-  "event": {
-    "date": "November 2026",
-    "title": "Treffen Sie uns auf dem PS Summit",
-    "p": "Das erste gemeinsame Open-Source-Event von PrestaShop und Sylius: Workshops, technische Vorträge und Fallstudien. Sprechen Sie uns auf Ihr Projekt an.",
-    "cta": "PS-Summit-Programm ↗"
-  },
   "footer": {
     "product": "Das Projekt",
     "resources": "Ressourcen"

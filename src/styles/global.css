@@ -257,17 +257,6 @@ nav {
 .logo-mark img { height: 40px; width: auto; filter: grayscale(1); opacity: .7; transition: filter .2s, opacity .2s; }
 .logo-mark:hover img { filter: none; opacity: 1; }
 
-/* ---- Event ---- */
-.event-banner { background: linear-gradient(100deg, #3f96c1 0%, #1dc9d7 100%); color: #fff; padding-block: clamp(3.5rem, 7vw, 5rem); }
-.event-inner { display: grid; grid-template-columns: 1fr auto; gap: 2rem; align-items: center; }
-@media (max-width: 720px) { .event-inner { grid-template-columns: 1fr; } }
-.event-banner .eyebrow { color: #fff; font-size: .95rem; letter-spacing: .14em; margin-bottom: .8rem; }
-.event-banner h2 { color: #fff; font-size: clamp(1.8rem, 3.5vw, 2.6rem); max-width: 28ch; margin-bottom: .9rem; }
-.event-banner p { color: rgb(255 255 255 / .9); max-width: 50ch; margin: 0; font-size: 1rem; line-height: 1.55; }
-.event-cta { display: flex; flex-wrap: wrap; gap: .8rem; justify-content: flex-end; }
-.event-cta .btn { border-color: transparent; }
-@media (max-width: 720px) { .event-cta { justify-content: flex-start; } }
-
 /* ---- Experts ---- */
 .experts .exp-grid { display: grid; grid-template-columns: .95fr 1.05fr; gap: clamp(2rem, 6vw, 5.5rem); align-items: start; }
 @media (max-width: 880px) { .experts .exp-grid { grid-template-columns: 1fr; } }

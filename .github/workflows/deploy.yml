@@ -1,7 +1,7 @@
 name: Deploy to GitHub Pages
 
-# Deploys the website at https://opencolibri.github.io/starter/ and the documentation
-# (docs-site/, pages from the docs/ folder of the monorepo) under /starter/docs/.
+# Deploys the website at https://starter.opencolibri.org/ and the documentation
+# (docs-site/, pages from the docs/ folder of the monorepo) under /docs/.
 # Pull requests only build both.
 
 on:
@@ -53,7 +53,7 @@ jobs:
           npm run build
         env:
           DOCS_DIR: ${{ github.workspace }}/.monorepo/docs
-          ASTRO_BASE: /starter/docs/
+          ASTRO_BASE: /docs/
       - name: Add the documentation to the website
         run: |
           test ! -e dist/docs

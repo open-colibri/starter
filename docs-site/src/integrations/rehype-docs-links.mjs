@@ -3,8 +3,8 @@ import { visit } from 'unist-util-visit';
 
 /**
  * Rewrites the relative links of the documentation pages, written for GitHub (`../commands/themes.md#anchor`,
- * `../images/canvas-homepage.png`), into site URLs (`/starter/docs/commands/themes/#anchor`, `/starter/docs/images/canvas-homepage.png`
- * with the `/starter/docs/` base).
+ * `../images/canvas-homepage.png`), into site URLs (`/docs/commands/themes/#anchor`, `/docs/images/canvas-homepage.png`
+ * with the `/docs/` base).
  */
 export default function rehypeDocsLinks({ contentDir, base = '/' }) {
     const prefix = base.endsWith('/') ? base : `${base}/`;

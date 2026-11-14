@@ -9,10 +9,10 @@ import monorepoDocs from './src/integrations/monorepo-docs.mjs';
 import rehypeDocsLinks from './src/integrations/rehype-docs-links.mjs';
 import { themesSidebar } from './src/integrations/themes-sidebar.mjs';
 
-// Served under the website, at https://opencolibri.github.io/starter/docs/: the deployment workflow of the
+// Served under the website, at https://starter.opencolibri.org/docs/: the deployment workflow of the
 // repository builds this folder with this base and copies dist/ to the docs/ folder of the website.
-const site = process.env.SITE_URL ?? 'https://opencolibri.github.io';
-const base = process.env.ASTRO_BASE ?? '/starter/docs/';
+const site = process.env.SITE_URL ?? 'https://starter.opencolibri.org';
+const base = process.env.ASTRO_BASE ?? '/docs/';
 // The docs/ folder of the opencolibri/colibri-starter monorepo, checked out next to the repository by default.
 const docsDir = process.env.DOCS_DIR ?? '../../colibri-starter/docs';
 const repository = 'opencolibri/colibri-starter';
@@ -60,7 +60,7 @@ export default defineConfig({
         { label: 'Extending', items: [{ autogenerate: { directory: 'extending' } }] },
         { label: 'Storefront slots', items: [{ autogenerate: { directory: 'storefront' } }] },
         { label: 'Contributing', items: [{ autogenerate: { directory: 'contributing' } }] },
-        { label: 'Colibri Starter website', link: 'https://opencolibri.github.io/starter/', attrs: { target: '_blank' } },
+        { label: 'Colibri Starter website', link: 'https://starter.opencolibri.org/', attrs: { target: '_blank' } },
       ],
       plugins: [starlightLinksValidator(), starlightLlmsTxt()],
     }),

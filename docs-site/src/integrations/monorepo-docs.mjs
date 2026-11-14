@@ -22,7 +22,7 @@ export default function monorepoDocs({ source, repository, branch = 'main' }) {
 
                 if (!existsSync(sourceDir)) {
                     throw new Error(
-                        `Documentation not found in "${sourceDir}". Clone open-colibri/colibri-starter next to open-colibri/starter, or set DOCS_DIR.`,
+                        `Documentation not found in "${sourceDir}". Clone opencolibri/colibri-starter next to opencolibri/starter, or set DOCS_DIR.`,
                     );
                 }
 

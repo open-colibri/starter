@@ -10,8 +10,8 @@ interface Props {
 const { locale, t } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const asset = (path: string) => `${base}/${path.replace(/^\//, '')}`;
-const repo = 'https://github.com/sylius-starter/skeleton';
-const docs = 'https://open-colibri.github.io/starter/docs/';
+const repo = 'https://github.com/opencolibri/colibri-starter';
+const docs = 'https://opencolibri.github.io/starter/docs/';
 ---
 
 <div class="announce" role="note">

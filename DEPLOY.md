@@ -2,7 +2,7 @@
 
 Static multi-lang landing page, built with [Astro](https://astro.build).
 
-Live (GitHub Pages project site): [https://opencolibri.github.io/starter/](https://opencolibri.github.io/starter/)
+Live (GitHub Pages, custom domain): [https://starter.opencolibri.org/](https://starter.opencolibri.org/)
 
 ## Prerequisites
 
@@ -12,12 +12,12 @@ Live (GitHub Pages project site): [https://opencolibri.github.io/starter/](https
 
 ```bash
 npm install     # install dependencies
-npm run dev     # http://localhost:4321/starter/
+npm run dev     # http://localhost:4321/
 npm run build   # output to dist/
-npm run preview # http://localhost:4321/starter/ after build
+npm run preview # http://localhost:4321/ after build
 ```
 
-`astro.config.mjs` defaults to `SITE_URL=https://opencolibri.github.io` and `ASTRO_BASE=/starter/`, so local and CI builds need no extra variables. The dev server serves the site at http://localhost:4321/starter/.
+`astro.config.mjs` defaults to `SITE_URL=https://starter.opencolibri.org` and `ASTRO_BASE=/`, so local and CI builds need no extra variables. The dev server serves the site at http://localhost:4321/.
 
 ## Editing content
 
@@ -37,9 +37,9 @@ The root `/` page redirects to the visitor's browser language (English by defaul
 
 The workflow [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) builds the site, builds the documentation
 website of [`docs-site/`](docs-site/README.md) (Astro Starlight, with the pages of the `docs/` folder of the
-[monorepo](https://github.com/opencolibri/colibri-starter)) with the `/starter/docs/` base, copies it to
+[monorepo](https://github.com/opencolibri/colibri-starter)) with the `/docs/` base, copies it to
 `dist/docs/` and deploys `dist/` with `actions/deploy-pages`. The documentation is therefore served at
-[https://opencolibri.github.io/starter/docs/](https://opencolibri.github.io/starter/docs/): never add a
+[https://starter.opencolibri.org/docs/](https://starter.opencolibri.org/docs/): never add a
 `docs` page or folder to this site.
 
 It deploys on every push to `main`, on the `docs-updated` repository dispatch (sent by the monorepo when its `docs/`
@@ -48,12 +48,13 @@ documentation link fails the check.
 
 In the repository settings, **Settings → Pages → Build and deployment → Source** must be set to **GitHub Actions**. With "Deploy from a branch", GitHub also runs its default Jekyll build on the raw sources, which fails on the `.astro` files.
 
-The repository is not named `opencolibri.github.io`, so GitHub Pages serves it as a project site, under the `/starter/` sub-path. There is no `public/CNAME`.
+### Custom domain
 
-### Custom domain (later)
+The site is served at the root of the `starter.opencolibri.org` custom domain, set in **Settings → Pages → Custom
+domain** (with **Enforce HTTPS**). A deployment through `actions/deploy-pages` ignores any `public/CNAME` file, so the
+domain lives in that setting only. The DNS zone of `opencolibri.org` points `starter` (`CNAME`) to
+`opencolibri.github.io.`, and the domain is verified in the organization settings (**Settings → Pages**), so no other
+account can claim it.
 
-To serve the site from a custom domain at the root:
-
-1. Create `public/CNAME` with the domain name
-2. Change the `site` default in `astro.config.mjs` to the new URL and the `base` default to `/` (or set `SITE_URL` and `ASTRO_BASE` in the workflow), so canonical and `hreflang` links are correct
-3. Configure DNS and the custom domain in GitHub Pages settings
+GitHub redirects the former project site URLs (`https://opencolibri.github.io/starter/…`) to the custom domain, path
+included.

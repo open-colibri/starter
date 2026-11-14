@@ -1,6 +1,6 @@
 name: Deploy to GitHub Pages
 
-# Deploys the website at https://open-colibri.github.io/starter/ and the documentation
+# Deploys the website at https://opencolibri.github.io/starter/ and the documentation
 # (docs-site/, pages from the docs/ folder of the monorepo) under /starter/docs/.
 # Pull requests only build both.
 
@@ -31,7 +31,7 @@ jobs:
       - name: Checkout the documentation pages
         uses: actions/checkout@v7
         with:
-          repository: open-colibri/colibri-starter
+          repository: opencolibri/colibri-starter
           path: .monorepo
           sparse-checkout: docs
       - name: Setup Node.js
